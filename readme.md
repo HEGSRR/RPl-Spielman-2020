@@ -12,8 +12,8 @@ A graphical abstract of the study could also be included as an image here.
 
 ### Contributors
 
-- First Name Last Name\*, email address, @githubname, ORCID link, affiliated institution(s)
-- First Name Last Name, email address, @githubname, ORCID link, affiliated institution(s)
+- Liam Smith \*, lwsmith@middlebury.edu, @Liam-W-Smith, ORCID link, Middlebury College
+- Joseph Holler, josephh@middlebury.edu , @josephholler, ORCID link, Middlebury College
 
 \* Corresponding author and creator
 
