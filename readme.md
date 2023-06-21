@@ -1,18 +1,18 @@
-# Title of Study
+# Replication of Spielman et al's 2020 Evaluation of Social Vulnerability Indicators
 
 ### Description
 
-Write a brief abstract about your research project.
-If the project is a reproduction or replication study, include the full citation with a statement
 This study is a *reproduction/replication* of:
 
-> citation to prior study
+> Spielman, S. E., Tuccillo, J., Folch, D. C., Schweikert, A., Davies, R., Wood, N., & Tate, E. (2020). Evaluating Social Vulnerability Indicators: Criteria and their Application to the Social Vulnerability Index. Natural Hazards, 100(1), 417–436. https://doi.org/10.1007/s11069-019-03820-z
 
-A graphical abstract of the study could also be included as an image here.
+The original paper develops methods to evaluate the validity of social vulnerability indicators and applies them to SoVI, revealing issues with internal consistency and construct validity.
+Their paper implements these methods by calculating SoVI over various spatial extents in the USA.
+We first reproduce their results and then extend their work with a replication study, determining how robust SoVI is to changes over time.
 
 ### Contributors
 
-- Liam Smith \*, lwsmith@middlebury.edu, @Liam-W-Smith, ORCID link, Middlebury College
+- Liam Smith\*, lwsmith@middlebury.edu, @Liam-W-Smith, ORCID link, Middlebury College
 - Joseph Holler, josephh@middlebury.edu , @josephholler, ORCID link, Middlebury College
 
 \* Corresponding author and creator
@@ -23,10 +23,10 @@ A graphical abstract of the study could also be included as an image here.
 - `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
 - `Date created`: date when project was started
 - `Date modified`: date of most recent revision
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
+- `Spatial Coverage`: United States, excluding Puerto Rico
+- `Spatial Resolution`: Counties and county equivalents
 - `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
+- `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
 - `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
 - `Funding Name`: name of funding for the project
 - `Funding Title`: title of project grant
