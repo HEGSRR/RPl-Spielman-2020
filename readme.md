@@ -19,7 +19,7 @@ We first reproduce their results and then extend their work with a replication s
 
 ### Study Metadata
 
-- `Key words`: Comma-separated list of keywords (tags) for searchability. Geographers often use one or two keywords each for: theory, geographic context, and methods.
+- `Key words`: social vulnerability, evaluation, social indicators
 - `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
 - `Date created`: date when project was started
 - `Date modified`: date of most recent revision
