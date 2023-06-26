@@ -1,1 +1,31 @@
-path,name,metadata,status,description
+path,name,metadata,description
+data/raw/public/spielman/input/USA_Counties_500k.shp, USA_Counties_500k.shp, INSERT_METADATA, Shapefile containing the cartographic boundaries for all US counties and county-equivalents, excluding those in Puerto Rico
+data/raw/public/spielman/input/sovi_inputs.csv, sovi_inputs.csv, METADATA, DESCRIPTION
+data/raw/public/spielman/input/sovi_decennial.csv, sovi_decennial.csv, data/metadata/spielman/sovi_decennial.txt, Demographic data from 2010 census.
+data/raw/public/spielman/input/sovi_decennial_sup1.csv, sovi_decennial_sup1.csv, data/metadata/spielman/sovi_decennial_sup1.txt, Supplementary information regarding land area for 2010 census.
+data/raw/public/spielman/input/sovi_acs.csv, sovi_acs.csv,  data/metadata/spielman/sovi_acs.txt, Demographic data from 2008-2012 5-year American Community Survey.
+data/raw/public/spielman/input/sovi_acs_sampSize.csv, sovi_acs_sampSize.csv, data/metadata/spielman/sovi_acs_sampSize.txt, Supplementary sample size and standard error information for variables from 2008-2012 5-year ACS.
+data/raw/public/spielman/input/sovi_acs_kids.csv, sovi_acs_kids.csv, data/metadata/spielman/sovi_acs_kids.txt, Supplementary variables regarding children for 2008-2012 5 year ACS.
+data/raw/public/spielman/input/county_names.csv, county_names.csv, METADATA, Shows the name of the county corresponding to each FIPS code.
+data/derived/public/counties.gpkg, counties.gpkg, derived(ok?), County-level data with geometries for input into SoVI.
+data/derived/public/counties.csv, counties.csv, derived(ok?), County-level data without geometries for input into SoVI.
+data/raw/public/spielman/output/County_in_Region_Rank.csv, County_in_Region_Rank.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/County_in_State_Rank.csv, County_in_State_Rank.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_cors_quintiles, drop1_place_cors_quintiles, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_fema_quint_moves_fema9.csv, drop1_place_fema_quint_moves_fema9.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_fema_rank_change_fema9.csv, drop1_place_fema_rank_change_fema9.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_state_quint_moves_ca.csv, drop1_place_state_quint_moves_ca.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_state_rank_change_ca.csv, drop1_place_state_rank_change_ca.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_usa_quint_moves.csv, drop1_place_usa_quint_moves.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/drop1_place_usa_rank_change.csv, drop1_place_usa_rank_change.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/FEMA_Region_Sovi_Score.csv, FEMA_Region_Sovi_Score.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/spearman_corr.docx, spearman_corr.docx, NA, DESCRIPTION
+data/raw/public/spielman/output/spearman_region.csv, spearman_region.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/spearman_state.csv, spearman_state.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/state_fema_us_rank_correlations.csv, state_fema_us_rank_correlations.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/State_Sovi_Score.csv, State_Sovi_Score.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/US_Drop1_NetContrib_ranks.csv, US_Drop1_NetContrib_ranks.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/US_Drop1_NetContrib_raw.csv, US_Drop1_NetContrib_raw.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/US_Drop1_NetContrib.csv, US_Drop1_NetContrib.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/US_Sovi_Score.csv, US_Sovi_Score.csv, NA, DESCRIPTION
+data/raw/public/spielman/output/variable_contributions.csv, variable_contributions.csv, NA, DESCRIPTION
