@@ -2,8 +2,8 @@
 
 ### Authors
 
-- First Name Last Name\*, email address, @githubname, ORCID link, affiliated institution(s)
-- First Name Last Name, email address, @githubname, ORCID link, affiliated institution(s)
+- Liam Smith\*, lwsmith@middlebury.edu, @Liam-W-Smith, ORCID link, Middlebury College
+- Joseph Holler, josephh@middlebury.edu , @josephholler, ORCID link, Middlebury College
 
 \* Corresponding author and creator
 
@@ -36,69 +36,56 @@ We first reproduce their results and then extend their work with a replication s
 
 ## Study design
 
-Is the study design **observational**, **experimental**, **quasi-experimental**, **exploratory**,  **meta-analysis**, **reproduction**, **reanalysis**, or **replication**?
-Describe the study archetype here.
+First, we seek to computationally reproduce Spielman et al's original work using the code provided in [their Github repository](https://github.com/geoss/sovi-validity).
+We adapt their code to work in an updated Python environment using updated packages, and we enhance reproducibility by drawing data directly from the census into Python via an API, rather than downloading data and reading it into Python.
 
-If testing **hypotheses** or investigating specific **research questions**, specify and number the hypotheses/questions here.
+Second, we seek to expand upon Spielman et al's work with a replication study.
+In their work, Spielman et al assess internal consistency and construct validity by altering the spatial extent.
+In our replication, we plan to employ the same methods to assess the validity of SoVI but change the temporal coverage rather than the spatial extent.
+In this manner, our analysis will assess the validity of SoVI from the perspective of robustness to time rather than spatial extent.
 
-If the study design includes subcomponents with different spatial or temporal characteristics than the overall study, or includes multi-level models, then enumerate the different subcomponents/levels and specify their spatial/temporal differences here.
+Research questions for original paper:
+1. What methods can we use to assess the validity of indices used to measure latent variables like SoVI?
+2. Does SoVI fulfill the seven criterion identified by Spielman et al for assessing the validity of complex social indices, including internal consistency and theoretical consistency (construct validity)?
+
+Research questions for our replication study:
+1. To what extent is Spielman et al's paper reproducible?
+2. Does SoVI exhibit qualities of internal consistency and construct validity when we calculate SoVI in the same location spatial extent for several years?
+
+***If the study design includes subcomponents with different spatial or temporal characteristics than the overall study, or includes multi-level models, then enumerate the different subcomponents/levels and specify their spatial/temporal differences here.***
 
 ## Materials and procedure
 
 ### Computational environment
 
-Define the hardware, operating system, and software requirements for the research.
-Include citations to important software projects, plugins or packages and their versions.
+Currently, we are using a 2020 MacBook Pro running on macOS Ventura 13.3.1.
+We anticipate collaborators working on the project from different computers and different operating systems, and we seek to containerize the project so that scripts can be run on many different machines.
+
+The original study used Python for their analysis, so we first reproduce their results in Python, using a containerized conda environment to be provided in the project's GitHub repository.
+This environment consists of the following software and packages:
+
+- Python 3.9.13
+- Pandas 1.4.4
+- GeoPandas 0.13.2
+- Pyhere 1.0.0
+- SciPy 1.9.1
+- NumPy 1.21.5
+- Mapclassify 2.5.0
+- MDP 3.6
+- Pygris 0.1.5
+- Libpysal 4.7.0
+
+For our replication study, we will translate the Python code into R.
+Using renv, we will containerize our R environment for use from any computer that can run R.
 
 ### Data and variables
 
-Describe the **data sources** and **variables** to be used.
-Data sources may include plans for observing and recording **primary data** or descriptions of **secondary data**.
-For secondary data sources with numerous variables, the analysis plan authors may focus on documenting only the variables intended for use in the study.
+For Spielman et al's original study, the data sources were the 2008-2012 5-year American Community Survey and the 2010 decennial census.
+Spielman et al downloaded their data from Social Explorer; in our reproduction, we pull our data directly from the census into Python via a census API package known as pygris.
+Since we are reproducing and replicating the work of Spielman et al, the variables we use are the same as those used in their study.
+These variables are based on the original work by Cutter et al to create SoVI, and cover a wide range of social and demographic information, the particulars of which are described below.
 
-Primary data sources for the study are to include ... .
-Secondary data sources for the study are to include ... .
-
-Each of the next subsections describes one data source.
-
-#### Primary data source1 name
-
-**Standard Metadata**
-
-- `Abstract`: Brief description of the data source
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
-- `Lineage`: Describe and/or cite data sources and/or methodological steps planned to create this data source.
-  - sampling scheme, including spatial sampling
-  - target sample size and method for determining sample size
-  - stopping criteria for data collection and sampling (e.g. sample size, time elapsed)
-  - de-identification / anonymization
-- `Distribution`: Describe who will make the data available and how?
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
-- `Data Quality`: State any planned quality assessment
-- `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
-  - `Label`: variable name as used in the data or code
-  - `Alias`: intuitive natural language name
-  - `Definition`: Short description or definition of the variable. Include measurement units in description.
-  - `Type`: data type, e.g. character string, integer, real
-  - `Accuracy`: e.g. uncertainty of measurements
-  - `Domain`: Expected range of Maximum and Minimum of numerical data, or codes or categories of nominal data, or reference to a standard codebook
-  - `Missing Data Value(s)`: Values used to represent missing data and frequency of missing data observations
-  - `Missing Data Frequency`: Frequency of missing data observations: not yet known for data to be collected
-
-| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| variable1 | ... | ... | ... | ... | ... | ... | ... |
-| variable2 | ... | ... | ... | ... | ... | ... | ... |
-
-#### Primary data source2 name
-
-... same form as above...
-
-#### Secondary data source1 name
+#### 2008-2012 American Community Survey (5-year)
 
 **Standard Metadata**
 
@@ -127,9 +114,34 @@ Each of the next subsections describes one data source.
 | variable1 | ... | ... | ... | ... | ... | ... | ... |
 | variable2 | ... | ... | ... | ... | ... | ... | ... |
 
-#### Secondary data source2 name
+#### 2010 Decennial Census
 
-... same form as above...
+**Standard Metadata**
+
+- `Abstract`: Brief description of the data source
+- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
+- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
+- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
+- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
+- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
+- `Lineage`: Describe and/or cite data sources and/or methodological steps used to create this data source
+- `Distribution`: Describe how the data is distributed, including any persistent identifier (e.g. DOI) or URL for data access
+- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
+- `Data Quality`: State result of quality assessment or state "Quality unknown"
+- `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
+  - `Label`: variable name as used in the data or code
+  - `Alias`: intuitive natural language name
+  - `Definition`: Short description or definition of the variable. Include measurement units in description.
+  - `Type`: data type, e.g. character string, integer, real
+  - `Accuracy`: e.g. uncertainty of measurements
+  - `Domain`: Range (Maximum and Minimum) of numerical data, or codes or categories of nominal data, or reference to a standard codebook
+  - `Missing Data Value(s)`: Values used to represent missing data and frequency of missing data observations
+  - `Missing Data Frequency`: Frequency of missing data observations
+
+| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| variable1 | ... | ... | ... | ... | ... | ... | ... |
+| variable2 | ... | ... | ... | ... | ... | ... | ... |
 
 ### Prior observations  
 
@@ -202,7 +214,6 @@ Describe how the results are to be interpreted *vis a vis* each hypothesis or re
 
 ## Integrity Statement
 
-Include an integrity statement - The authors of this preregistration state that they completed this preregistration to the best of their knowledge and that no other preregistration exists pertaining to the same hypotheses and research.
-If a prior registration *does* exist, explain the rationale for revising the registration here.
+The authors of this preregistration state that they completed this preregistration to the best of their knowledge and that no other preregistration exists pertaining to the same hypotheses and research.
 
 ## References
