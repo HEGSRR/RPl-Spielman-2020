@@ -23,7 +23,6 @@ package.check <- lapply(
 
 path <- c(
     "dscr" = here("data", "scratch"),
-    "drpub" = here("data", "raw", "public", "spielman", "input"),
     "drpriv" = here("data", "raw", "private"),
     "ddpub" = here("data", "derived", "public"),
     "ddpriv" = here("data", "derived", "private"),

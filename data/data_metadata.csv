@@ -1,5 +1,5 @@
 path,name,metadata,description
-data/raw/public/spielman/input/USA_Counties_500k.shp, USA_Counties_500k.shp, INSERT_METADATA, Shapefile containing the cartographic boundaries for all US counties and county-equivalents, excluding those in Puerto Rico
+data/raw/public/spielman/input/USA_Counties_500k.shp, USA_Counties_500k.shp, INSERT_METADATA, Shapefile containing the cartographic boundaries for all US counties and county-equivalents excluding those in Puerto Rico
 data/raw/public/spielman/input/sovi_inputs.csv, sovi_inputs.csv, METADATA, DESCRIPTION
 data/raw/public/spielman/input/sovi_decennial.csv, sovi_decennial.csv, data/metadata/spielman/sovi_decennial.txt, Demographic data from 2010 census.
 data/raw/public/spielman/input/sovi_decennial_sup1.csv, sovi_decennial_sup1.csv, data/metadata/spielman/sovi_decennial_sup1.txt, Supplementary information regarding land area for 2010 census.

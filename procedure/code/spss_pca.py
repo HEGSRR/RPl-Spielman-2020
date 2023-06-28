@@ -79,7 +79,7 @@ class SPSS_PCA:
 
 		# run base SPSS-style PCA to get all eigenvalues
 		pca_node = MDP.nodes.WhiteningNode()  # settings for the PCA
-		scores = pca_node.execute(z_inputs)  # base run PCA
+		scores = pca_node.execute(z_inputs.values)  # base run PCA # ADDED .VALUES
 		eigenvalues_all = pca_node.d   # rename PCA results
 
 		# run SPSS-style PCA based on user settings
