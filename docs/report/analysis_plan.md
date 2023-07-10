@@ -22,17 +22,25 @@ We first reproduce their results and then extend their work with a replication s
 
 - `Key words`: social vulnerability, evaluation, social indicators
 - `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
-- `Date created`: date when project was started
-- `Date modified`: date of most recent revision
+- `Date created`: June 19, 2023
+- `Date modified`: June 29, 2023
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
 - `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
+- `Temporal Coverage`: TBD
+- `Temporal Resolution`: TBD
 - `Funding Name`: name of funding for the project
 - `Funding Title`: title of project grant
 - `Award info URI`: web address for award information
 - `Award number`: award number
+
+#### Original study spatio-temporal metadata
+
+- `Spatial Coverage`: United States, excluding Puerto Rico
+- `Spatial Resolution`: counties and county equivalents
+- `Spatial Reference System`: spatial reference system of original study
+- `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
+- `Temporal Resolution`: temporal resolution of original study
 
 ## Study design
 
@@ -46,11 +54,11 @@ In this manner, our analysis will assess the validity of SoVI from the perspecti
 
 Research questions for original paper:
 1. What methods can we use to assess the validity of indices used to measure latent variables like SoVI?
-2. Does SoVI fulfill the seven criterion identified by Spielman et al for assessing the validity of complex social indices, including internal consistency and theoretical consistency (construct validity)?
+2. Does SoVI fulfill the seven criteria identified by Spielman et al for assessing the validity of complex social indices, including internal consistency and theoretical consistency (construct validity)?
 
 Research questions for our replication study:
 1. To what extent is Spielman et al's paper reproducible?
-2. Does SoVI exhibit qualities of internal consistency and construct validity when we calculate SoVI in the same location spatial extent for several years?
+2. Does SoVI exhibit qualities of internal consistency and construct validity when we calculate SoVI in the same location for several different years?
 
 ***If the study design includes subcomponents with different spatial or temporal characteristics than the overall study, or includes multi-level models, then enumerate the different subcomponents/levels and specify their spatial/temporal differences here.***
 
@@ -64,19 +72,19 @@ We anticipate collaborators working on the project from different computers and 
 The original study used Python for their analysis, so we first reproduce their results in Python, using a containerized conda environment to be provided in the project's GitHub repository.
 This environment consists of the following software and packages:
 
-- Python 3.9.13
+- Python 3.9.16
 - Pandas 1.4.4
 - GeoPandas 0.13.2
 - Pyhere 1.0.0
-- SciPy 1.9.1
+- SciPy 1.10.1
 - NumPy 1.21.5
 - Mapclassify 2.5.0
-- MDP 3.6
+- MDP 3.5
 - Pygris 0.1.5
 - Libpysal 4.7.0
 
-For our replication study, we will translate the Python code into R.
-Using renv, we will containerize our R environment for use from any computer that can run R.
+For our replication study, we may translate the Python code into R.
+We seek to containerize our R environment for use from any computer.
 
 ### Data and variables
 
@@ -90,12 +98,12 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 **Standard Metadata**
 
 - `Abstract`: Brief description of the data source
-- `Spatial Coverage`: Specify the geographic extent of your study. This may be a place name and link to a feature in a gazetteer like GeoNames or OpenStreetMap, or a well known text (WKT) representation of a bounding box.
-- `Spatial Resolution`: Specify the spatial resolution as a scale factor, description of the level of detail of each unit of observation (including administrative level of administrative areas), and/or or distance of a raster GRID size
+- `Spatial Coverage`: United States
+- `Spatial Resolution`: county and county-equivalents
 - `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
-- `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
-- `Lineage`: Describe and/or cite data sources and/or methodological steps used to create this data source
+- `Temporal Coverage`: 2008-2012
+- `Temporal Resolution`: One-time observations
+- `Lineage`: Obtained directly from the census via API
 - `Distribution`: Describe how the data is distributed, including any persistent identifier (e.g. DOI) or URL for data access
 - `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
 - `Data Quality`: State result of quality assessment or state "Quality unknown"
