@@ -96,13 +96,16 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 **Standard Metadata**
 
 - `Abstract`: The 5-year ACS provides estimates surrounding demographic information in the USA. These estimates are more reliable than 1-year and 3-year estimates but less reliable than decennial census data. On the other hand, 5-year estimates are less current than 1-year and 3-year estimates because they represent measurements taken over 60 months. See the [census website](https://www.census.gov/programs-surveys/acs/guidance/estimates.html) for more details.
-- `Spatial Coverage`: United States
+- `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
 - `Spatial Reference System`: None, just attribute data
 - `Temporal Coverage`: 2008-2012
 - `Temporal Resolution`: One-time observations
 - `Lineage`: Original data downloaded from Social Explorer and then placed in the [original study's GitHub repository](https://github.com/geoss/sovi-validity). Reproduction data obtained directly from the census via API.
-- `Distribution`: This data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/)
+- `Distribution`: The reproduction data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/). Spielman et al originally accessed the ACS data with Social Explorer from the following three tables.
+  - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728365
+  - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728369
+  - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10775556
 - `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
 - `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
 - `Variables`:
@@ -156,13 +159,28 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | B25077_001E          | ACS12_5yr_B25077001 | median home value                                                             | MEDIAN VALUE (DOLLARS): Estimate!!Median value (dollars)                                                                                                                                                                           | float64 | 19400 - 944100         |                     nan |                        1 |
 
 
-
-
-
-
-
-
 #### 2010 Decennial Census -- used in Spielman et al's original study
+
+**Standard Metadata**
+
+- `Abstract`:
+- `Spatial Coverage`: United States, excluding Puerto Rico
+- `Spatial Resolution`: County and county-equivalents
+- `Spatial Reference System`: None, just attribute data
+- `Temporal Coverage`: 2010
+- `Temporal Resolution`: One-time observations
+- `Lineage`: Original data downloaded from Social Explorer and then placed in the [original study's GitHub repository](https://github.com/geoss/sovi-validity).
+- `Distribution`: Visit [this URL](http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728369) for access
+- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
+- `Data Quality`: State result of quality assessment or state "Quality unknown"
+- `Variables`:
+
+| Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| variable1 | ... | ... | ... | ... | ... | ... | ... |
+| variable2 | ... | ... | ... | ... | ... | ... | ... |
+
+#### Shapefile used in Spielman et al's original study
 
 **Standard Metadata**
 
@@ -191,7 +209,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | variable1 | ... | ... | ... | ... | ... | ... | ... |
 | variable2 | ... | ... | ... | ... | ... | ... | ... |
 
-#### 2010 Decennial Census -- used in Spielman et al's original study
+
+#### Cartographic boundaries and area information for reproduction
 
 **Standard Metadata**
 
@@ -219,6 +238,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | variable1 | ... | ... | ... | ... | ... | ... | ... |
 | variable2 | ... | ... | ... | ... | ... | ... | ... |
+
+
 
 ### Prior observations  
 
