@@ -115,6 +115,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
   - `Missing Data Value(s)`: Values used to represent missing data and frequency of missing data observations
   - `Missing Data Frequency`: Frequency of missing data observations
 
+
   | Label       | Alias                                                                         | Definition                                                                                                                                                                                                                         | Type    | Domain                 |   Missing Data Value(s) |   Missing Data Frequency |
  |:------------|:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:-----------------------|------------------------:|-------------------------:|
  | B01002_001E | median age                                                                    | MEDIAN AGE BY SEX: Estimate!!Median age!!Total                                                                                                                                                                                     | float64 | 21.7 - 63              |                     nan |                        0 |
@@ -162,6 +163,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
  | B08201_001E | total households for which vehicle status and family size known               | HOUSEHOLD SIZE BY VEHICLES AVAILABLE: Estimate!!Total                                                                                                                                                                              | int64   | 35 - 3218511           |                     nan |                        0 |
  | B25064_001E | median gross rent                                                             | MEDIAN GROSS RENT (DOLLARS): Estimate!!Median gross rent                                                                                                                                                                           | int64   | 296 - 1678             |                     nan |                        0 |
  | B25077_001E | median home value                                                             | MEDIAN VALUE (DOLLARS): Estimate!!Median value (dollars)                                                                                                                                                                           | float64 | 19400 - 944100         |                     nan |                        1 |
+
 
 
 #### 2010 Decennial Census
