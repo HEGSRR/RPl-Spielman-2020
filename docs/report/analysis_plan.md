@@ -102,9 +102,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 - `Temporal Coverage`: 2008-2012
 - `Temporal Resolution`: One-time observations
 - `Lineage`: Original data downloaded from Social Explorer and then placed in the [original study's GitHub repository](https://github.com/geoss/sovi-validity). Reproduction data obtained directly from the census via API.
-- `Distribution`: The reproduction data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/). Spielman et al originally accessed the ACS data with Social Explorer from the following three tables.
+- `Distribution`: The reproduction data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/). Spielman et al originally accessed the ACS data with Social Explorer from the following two tables.
   - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728365
-  - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728369
   - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10775556
 - `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
 - `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
@@ -163,7 +162,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 
 **Standard Metadata**
 
-- `Abstract`:
+- `Abstract`: Collected once every ten years, the decennial census documents demographic and population data in the United States.
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
 - `Spatial Reference System`: None, just attribute data
@@ -177,8 +176,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| variable1 | ... | ... | ... | ... | ... | ... | ... |
-| variable2 | ... | ... | ... | ... | ... | ... | ... |
+| SE_T02A_002 | Land area | Area (Land) in square miles | float64 |  ... | 1.998779 - 145504.8 | nan | 0 |
 
 #### Shapefile used in Spielman et al's original study
 
