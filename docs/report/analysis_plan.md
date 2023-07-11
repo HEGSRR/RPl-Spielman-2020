@@ -20,27 +20,27 @@ We first reproduce their results and then extend their work with a replication s
 
 ### Study Metadata
 
-- `Key words`: social vulnerability, evaluation, social indicators
-- `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
+- `Key words`: Social vulnerability, evaluation, social indicators
+- `Subject`: Social and Behavioral Sciences: Geography: Human Geography
 - `Date created`: June 19, 2023
 - `Date modified`: June 29, 2023
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
-- `Temporal Coverage`: TBD
-- `Temporal Resolution`: TBD
-- `Funding Name`: name of funding for the project
-- `Funding Title`: title of project grant
-- `Award info URI`: web address for award information
-- `Award number`: award number
+- `Spatial Reference System`: EPSG:4269
+- `Temporal Coverage`: TBD (ADD)
+- `Temporal Resolution`: TBD (ADD)
+- `Funding Name`: name of funding for the project (ADD)
+- `Funding Title`: title of project grant (ADD)
+- `Award info URI`: web address for award information (ADD)
+- `Award number`: award number (ADD)
 
 #### Original study spatio-temporal metadata
 
 - `Spatial Coverage`: United States, excluding Puerto Rico
-- `Spatial Resolution`: counties and county equivalents
-- `Spatial Reference System`: spatial reference system of original study
+- `Spatial Resolution`: Counties and county equivalents
+- `Spatial Reference System`: EPSG:4269
 - `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
-- `Temporal Resolution`: temporal resolution of original study
+- `Temporal Resolution`: One-time measurement, does not address change over time
 
 ## Study design
 
@@ -82,9 +82,7 @@ This environment consists of the following software and packages:
 - MDP 3.5
 - Pygris 0.1.5
 - Libpysal 4.7.0
-
-For our replication study, we may translate the Python code into R.
-We seek to containerize our R environment for use from any computer.
+- CHECK WHICH OTHERS TO ADD
 
 ### Data and variables
 
@@ -97,16 +95,16 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 
 **Standard Metadata**
 
-- `Abstract`: Brief description of the data source
+- `Abstract`: The 5-year ACS provides estimates surrounding demographic information in the USA. These estimates are more reliable than 1-year and 3-year estimates but less reliable than decennial census data. On the other hand, 5-year estimates are less current than 1-year and 3-year estimates because they represent measurements taken over 60 months. See the [census website](https://www.census.gov/programs-surveys/acs/guidance/estimates.html) for more details.
 - `Spatial Coverage`: United States
-- `Spatial Resolution`: county and county-equivalents
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
+- `Spatial Resolution`: County and county-equivalents
+- `Spatial Reference System`: None, just attribute data
 - `Temporal Coverage`: 2008-2012
 - `Temporal Resolution`: One-time observations
-- `Lineage`: Obtained directly from the census via API
-- `Distribution`: Describe how the data is distributed, including any persistent identifier (e.g. DOI) or URL for data access
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
-- `Data Quality`: State result of quality assessment or state "Quality unknown"
+- `Lineage`: Obtained directly from the census via API (ADD LINEAGE OF SPIELMAN DATA?)
+- `Distribution`: This data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/)
+- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
+- `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
 - `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
   - `Label`: variable name as used in the data or code
   - `Alias`: intuitive natural language name
@@ -119,8 +117,53 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| variable1 | ... | ... | ... | ... | ... | ... | ... |
-| variable2 | ... | ... | ... | ... | ... | ... | ... |
+| B01002_001E | median age | median age | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B03002_001E | population race/ethnicity | total population of respondents to race/ethnicity | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B03002_004E | Black | total Black population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B03002_005E | Native American | total Native American population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B03002_006E | Asian | total Asian population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B03002_012E | Latinx | total Latinx population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B06001_002E | under 5 | total population under 5 years of age | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B09020_001E | above 65 |  total population over 65 years of age | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B01003_001E | population | total population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25008_001E | population with housing | total population in occupied housing units | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25002_002E | occupied housing | total occupied housing units | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25003_003E | renter-occupied housing | total renter occupied housing units | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25002_001E | housing units with known occupancy status | total housing units for which occupancy status is known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B09020_021E | elderly in assisted living | total 65+ living in group quarters | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B01001_026E | female | total female population | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B11001_006E | female-headed households | total female-headed family households | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B11001_001E | total households | total households for which household type is known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25002_003E | vacant housing | total vacant housing units | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B19025_001E | aggregate household income | aggregate household income | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B23022_025E | unemployed males | total males unemployed for last 12 months | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B23022_049E | unemployed females | total females unemployed for last 12 months | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B23022_001E | unemployment and sex known | total population for which unemployment and sex cross-tabulations known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B17021_002E | impoverished | total population below poverty level | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B17021_001E | poverty status known | total population for which poverty information available | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25024_010E | mobile homes | number of mobile home housing units in structure | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25024_001E | housing units | total housing units in structure | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| C24010_038E | total female employed | total female employed | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| C24010_001E | sex and occupation known | total population for which sex and occupation known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B19055_002E | households with social security | total households with social security income | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B19055_001E | households social security status known | total households for which social security income status known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B09002_002E | children married couple families | total children in married couple families | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B09002_001E | children with known age and family type | total children for which family type and age are known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B19001_017E | high-income households | total households with over 200k income | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B06007_005E | Spanish with poor English | total Spanish-speakers who speak english less than very well | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B06007_008E | other language with poor English | total people who speak another language and speak English less than very well | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B06007_001E | language known | total population with known language spoken at home and English ability | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B16010_002E | less than high school diploma | total population with less than a high school graduate education | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B16010_001E | known education, employment, language | total for which education, employment, language at home known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| C24050_002E | extractive occupation | total population in extractive industries | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| C24050_001E | industry known | total population for which industry known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| C24050_029E | service occupations | total people in service occupations | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B08201_002E | households without vehicles | total households with no available vehicle | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B08201_001E | households with known vehicle status and family size | total households for which vehicle status and family size known | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25064_001E | median gross rent | median gross rent | int64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+| B25077_001E | median home value | median home value | float64 | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
+
+
 
 #### 2010 Decennial Census
 
