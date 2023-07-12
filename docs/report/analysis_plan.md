@@ -91,7 +91,7 @@ Spielman et al downloaded their data from Social Explorer; in our reproduction, 
 Since we are reproducing and replicating the work of Spielman et al, the variables we use are the same as those used in their study.
 These variables are based on the original work by Cutter et al to create SoVI, and cover a wide range of social and demographic information, the particulars of which are described below.
 
-#### 2008-2012 American Community Survey (5-year) -- used in both original study and reproduction
+#### (1) 2008-2012 American Community Survey (5-year) -- used in both original study and reproduction
 
 **Standard Metadata**
 
@@ -159,7 +159,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | GEOID | Geo_FIPS | FIPS code unique identifier | Unique code for every county and county-equivalent in USA | string | 01001 - 56045 | None | 0 |
 
 
-#### 2010 Decennial Census -- used in Spielman et al's original study
+#### (2) 2010 Decennial Census -- used in Spielman et al's original study
 
 **Standard Metadata**
 
@@ -181,7 +181,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | Geo_FIPS | FIPS code unique identifier | Unique code for every county and county-equivalent in USA | string | ... | g01001 - g56045 | None | 0 |
 
 
-#### USA Counties Shapefile -- used in Spielman et al's original study
+#### (3) USA Counties Shapefile -- used in Spielman et al's original study
 
 **Standard Metadata**
 
@@ -202,7 +202,7 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | geoFIPS | FIPS code unique identifer | Unique code for every county and county-equivalent in USA | string | ... | g01001 - g56045 | None | 0 |
 
 
-#### USA Counties Cartographic Boundaries -- used in replication study
+#### (4) USA Counties Cartographic Boundaries -- used in replication study
 
 **Standard Metadata**
 
@@ -224,33 +224,20 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 | COUNTY | County-level FIPS code | County-level FIPS code | string | ... | 001 - 840 | None | 0 |
 | CENSUSAREA | land area | land area in square miles | float64 | ... | 1.999 - 145504.789 | nan | 0 |
 
-
+#### ADD IN DATA FOR REPLICATION (ADD)
 
 ### Prior observations  
 
-Prior experience with the study area, prior data collection, or prior observation of the data can compromise the validity of a study, e.g. through p-hacking.
-Therefore, disclose any prior experience or observations at the time of study pre-registration here, with example text below:
+At the time of this study pre-registration, the authors had examined the python code and data from the original study and modified the code to reproduce the original results in a current environment.
+This study is related to 0 prior studies by the authors.
 
-At the time of this study pre-registration, the authors had _____ prior knowledge of the geography of the study region with regards to the ____ phenomena to be studied.
-This study is related to ____ prior studies by the authors
+We have already thoroughly observed datasets (1) through (4), as we have already reproduced the original study.
+Specifically, we imported the data used by Spielman et al into a python script, and then used pygris to pull analogous data directly from the census into python.
+We checked that our data and Spielman et al's data were equivalent despite coming from different sources, and then conducted Spielman et al's analysis on our new data.
 
-For each primary data source, declare the extent to which authors had already engaged with the data:
+ADD IN NOTE FOR OTHER DATA --> to be used in replication
 
-- [ ] no data collection has started
-- [ ] pilot test data has been collected, but will not be analyzed
-- [ ] data collection is in progress and data has not been observed
-- [ ] data collection is in progress and __% of data has been observed
-- [ ] data collection is complete and data has been observed. Explain how authors have already manipulated / explored the data.
-
-For each secondary source, declare the extent to which authors had already engaged with the data:
-
-- [ ] data is not available yet
-- [ ] data is available, but only metadata has been observed
-- [ ] metadata and descriptive statistics have been observed
-- [ ] metadata and a subset or sample of the full dataset have been observed
-- [ ] the full dataset has been observed. Explain how authors have already manipulated / explored the data.
-
-### Threats to validity
+### Threats to validity (ADD)
 
 Given the research design and primary data to be collected and/or secondary data to be used, discuss common threats to validity and the approach to mitigating those threats, with an emphasis on geographic threats to validity.
 
@@ -267,7 +254,7 @@ These include:
   - ecological fallacy
   - uncertainty e.g. from spatial disaggregation, anonymization, differential privacy
 
-### Data transformations
+### Data transformations (ADD: is it necessary to do this for all SoVI vars?)
 
 Describe all data transformations planned to prepare data sources for analysis.
 This section should explain with the fullest detail possible how to transform data from its raw state from the time of acquisition or observation to the main analysis, including steps to check and mitigate threats to validity.
@@ -281,17 +268,17 @@ Examples of **variable** transformations include standardization, normalization,
 
 Be sure to include any steps planned to **exclude** observations with missing or outlier data, to **group** observations by attribute or geographic criteria, or to **impute** missing data.
 
-### Analysis
+### Analysis (ADD: discuss with Joe)
 
 Describe the methods of analysis that will directly test the hypotheses or provide results to answer the research questions.
 This section should explicitly define any spatial / statistical models and their parameters, including significance thresholds.
 Also explain any follow-up analyses or validations.
 
-## Results
+## Results (ADD)
 
 Describe how results are to be presented.
 
-## Discussion
+## Discussion (ADD)
 
 Describe how the results are to be interpreted *vis a vis* each hypothesis or research question.
 
@@ -299,4 +286,4 @@ Describe how the results are to be interpreted *vis a vis* each hypothesis or re
 
 The authors of this preregistration state that they completed this preregistration to the best of their knowledge and that no other preregistration exists pertaining to the same hypotheses and research.
 
-## References
+## References (ADD)
