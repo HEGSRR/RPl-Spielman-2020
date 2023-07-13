@@ -29,10 +29,10 @@ We first reproduce their results and then extend their work with a replication s
 - `Spatial Reference System`: EPSG:4269
 - `Temporal Coverage`: TBD (ADD)
 - `Temporal Resolution`: TBD (ADD)
-- `Funding Name`: name of funding for the project (ADD)
-- `Funding Title`: title of project grant (ADD)
-- `Award info URI`: web address for award information (ADD)
-- `Award number`: award number (ADD)
+- `Funding Name`: NSF Division of Behavioral and Cognitive Sciences
+- `Funding Title`: Transforming Theory and STEM Education Through Reproductions and Replications in the Geographical Sciences
+- `Award info URI`: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2049837
+- `Award number`: 2049837
 
 #### Original study spatio-temporal metadata
 
@@ -105,8 +105,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 - `Distribution`: The reproduction data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/). Spielman et al originally accessed the ACS data with Social Explorer from the following two tables.
   - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728365
   - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10775556
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
-- `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: Margin of error provided by the Census Bureau for relevant variables
 - `Variables`:
 
 | Reproduction Label   | Spielman Label      | Alias                                                                         | Definition                                                                                                                                                                                                                         | Type    | Domain                 |   Missing Data Value(s) |   Missing Data Frequency |
@@ -171,8 +171,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 - `Temporal Resolution`: One-time observations
 - `Lineage`: Original data downloaded from Social Explorer and then placed in the [original study's GitHub repository](https://github.com/geoss/sovi-validity).
 - `Distribution`: Visit [this URL](http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10728369) for access
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights*
-- `Data Quality`: State result of quality assessment or state "Quality unknown"
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: Margin of error provided by the Census Bureau for relevant variables
 - `Variables`:
 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
@@ -193,8 +193,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 - `Temporal Resolution`: One-time observations
 - `Lineage`: Unknown
 - `Distribution`: Unknown. Presumably downloaded from census.
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
-- `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: (ADD)
 - `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
@@ -214,8 +214,8 @@ These variables are based on the original work by Cutter et al to create SoVI, a
 - `Temporal Resolution`: One-time observations
 - `Lineage`: We use [pygris](https://walker-data.com/pygris/) to pull the data directly from the census into python.
 - `Distribution`: This file is distributed via a census API. See more information on the [census website](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.2010.html#list-tab-1556094155) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/).
-- `Constraints`: Legal constraints for *access* or *use* to protect *privacy* or *intellectual property rights* (ADD)
-- `Data Quality`: State result of quality assessment or state "Quality unknown" (ADD)
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: (ADD))
 - `Variables`: For each variable, enter the following information. If you have two or more variables per data source, you may want to present this information in table form (shown below)
 
 | Label | Alias | Definition | Type | Accuracy | Domain | Missing Data Value(s) | Missing Data Frequency |
