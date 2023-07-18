@@ -29,3 +29,11 @@ data/raw/public/spielman/output/US_Drop1_NetContrib_raw.csv, US_Drop1_NetContrib
 data/raw/public/spielman/output/US_Drop1_NetContrib.csv, US_Drop1_NetContrib.csv, NA, DESCRIPTION
 data/raw/public/spielman/output/US_Sovi_Score.csv, US_Sovi_Score.csv, NA, DESCRIPTION
 data/raw/public/spielman/output/variable_contributions.csv, variable_contributions.csv, NA, DESCRIPTION
+data/derived/public/version1/counties.csv, counties.csv, METADATA, counties with raw variables and derived variables for input into SoVI
+data/derived/public/version1/counties.gpkg, counties.gpkg, METADATA, counties with raw variables, derived variables for input into SoVI, and geometries
+data/derived/public/version1/County_in_State_Rank.csv, County_in_State_Rank.csv,  METADATA, All 3 SoVI model's ranks in each state of interest
+data/derived/public/version1/FEMA_Region_Sovi_Score.csv, FEMA_Region_Sovi_Score.csv,  METADATA, SoVI scores and ranks for all counties in each FEMA region model
+data/derived/public/version1/state_fema_us_rank_correlations.csv, state_fema_us_rank_correlations.csv,  METADATA, Correlation of state ranks 
+data/derived/public/version1/State_Sovi_Score.csv, State_Sovi_Score.csv,  METADATA, SoVI scores and ranks for all counties in each state model
+data/derived/public/version1/US_Sovi_Score.csv, US_Sovi_Score.csv,  METADATA, SoVI scores and ranks for all counties in the analysis
+data/derived/public/version1/variable_contributions.csv, variable_contributions.csv,  METADATA, Variable contributions in all SoVI models
