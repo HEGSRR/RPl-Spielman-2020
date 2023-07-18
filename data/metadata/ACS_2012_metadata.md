@@ -15,7 +15,8 @@
   - http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R10775556
 - `Constraints`: Census data is available in the public domain
 - `Data Quality`: Margin of error provided by the Census Bureau for relevant variables
-- `Variables`:  
+- `Variables`:
+
 | Reproduction Label   | Spielman Label      | Alias                                                                         | Definition                                                                                                                                                                                                                         | Type    | Domain                 |   Missing Data Value(s) |   Missing Data Frequency |
 |:---------------------|:--------------------|:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|:-----------------------|------------------------:|-------------------------:|
 | B01002_001E          | ACS12_5yr_B01002001 | median age                                                                    | MEDIAN AGE BY SEX: Estimate!!Median age!!Total                                                                                                                                                                                     | float64 | 21.7 - 63              |                     nan |                        0 |
