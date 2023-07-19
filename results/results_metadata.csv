@@ -1,1 +1,11 @@
 ﻿path,name,description
+results/figures/workflow_data_transformations.png,workflow_data_transformations.png,Workflow diagram for data transformations
+results/figures/workflow_FEMA.png,workflow_FEMA.png,Workflow diagram for SoVI calculations at FEMA region spatial extent
+results/figures/workflow_internal_consistency.png,workflow_internal_consistency.png,Workflow diagram for internal consistency analysis
+results/figures/workflow_national.png,workflow_national.png,Workflow diagram for SoVI calculations at national spatial extent
+results/figures/workflow_PCA.png,workflow_PCA.png,Workflow diagram for SPSS_PCA function
+results/figures/workflow_state.png,workflow_state.png,Workflow diagram for SoVI calculations at state-level spatial extent
+results/figures/workflow_theoretical_consistency.png,workflow_theoretical_consistency.png,Workflow diagram for theoretical consistency analysis
+results/figures/fig1.png,fig1.png,Reproduction of figure 1 from Spielman et al
+results/figures/fig2.csv,fig2.csv,Reproduction of figure 2 from Spielman et al
+results/figures/table2.csv,table2.csv,Reproduction of table 2 from Spielman et al
