@@ -5,17 +5,17 @@ data/raw/public/spielman/input/sovi_acs.csv,sovi_acs.csv,data/metadata/spielman/
 data/raw/public/spielman/input/sovi_acs_kids.csv,sovi_acs_kids.csv,data/metadata/spielman/sovi_acs_kids.txt,Supplementary variables regarding children for 2008-2012 5 year ACS.
 data/raw/public/spielman/output/County_in_State_Rank.csv,County_in_State_Rank.csv,Derived (by Spielman et al),All 3 SoVI model's ranks in each state of interest
 data/raw/public/spielman/output/FEMA_Region_Sovi_Score.csv,FEMA_Region_Sovi_Score.csv,Derived (by Spielman et al),SoVI scores and ranks for all counties in each FEMA region model
-data/raw/public/spielman/output/state_fema_us_rank_correlations.csv,state_fema_us_rank_correlations.csv,Derived (by Spielman et al),Correlation of state ranks 
+data/raw/public/spielman/output/state_fema_us_rank_correlations.csv,state_fema_us_rank_correlations.csv,Derived (by Spielman et al),Correlation of state ranks
 data/raw/public/spielman/output/State_Sovi_Score.csv,State_Sovi_Score.csv,Derived (by Spielman et al),SoVI scores and ranks for all counties in each state model
 data/raw/public/spielman/output/US_Sovi_Score.csv,US_Sovi_Score.csv,Derived (by Spielman et al),SoVI scores and ranks for all counties in the analysis
 data/raw/public/spielman/output/variable_contributions.csv,variable_contributions.csv,Derived (by Spielman et al),Variable contributions in all SoVI models
-data/raw/public/counties_attributes_raw.csv,counties_attributes_raw.csv,data/metadata/ACS_2012_metadata.md,Counties attribute data acquired directly from pygris
+data/raw/public/counties_attributes_raw.csv,counties_attributes_raw.csv,data/metadata/ACS_2012_data_dictionary.csv and data/metadata/ACS_2012_geographic_metadata.md,Counties attribute data acquired directly from pygris
 data/raw/public/counties_geometries_raw.gpkg,counties_geometries_raw.gpkg,data/metadata/county_geom_2010_metadata.md,Counties geometry data acquired directly from pygris
 data/derived/public/version1/counties.csv,counties.csv,Derived,County-level data without geometries for input into SoVI.
 data/derived/public/version1/counties.gpkg,counties.gpkg,Derived,County-level data with geometries for input into SoVI.
 data/derived/public/version1/County_in_State_Rank.csv,County_in_State_Rank.csv,Derived,All 3 SoVI model's ranks in each state of interest
 data/derived/public/version1/FEMA_Region_Sovi_Score.csv,FEMA_Region_Sovi_Score.csv,Derived,SoVI scores and ranks for all counties in each FEMA region model
-data/derived/public/version1/state_fema_us_rank_correlations.csv,state_fema_us_rank_correlations.csv,Derived,Correlation of state ranks 
+data/derived/public/version1/state_fema_us_rank_correlations.csv,state_fema_us_rank_correlations.csv,Derived,Correlation of state ranks
 data/derived/public/version1/State_Sovi_Score.csv,State_Sovi_Score.csv,Derived,SoVI scores and ranks for all counties in each state model
 data/derived/public/version1/US_Sovi_Score.csv,US_Sovi_Score.csv,Derived,SoVI scores and ranks for all counties in the analysis
 data/derived/public/version1/variable_contributions.csv,variable_contributions.csv,Derived,Variable contributions in all SoVI models
