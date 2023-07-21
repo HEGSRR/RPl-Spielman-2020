@@ -1,6 +1,5 @@
 path,name,purpose
-code,script1.R,download and preprocess data
-protocol,survey_irb.pdf,Institutional review board protocol for survey sampling and instrument
-protocol,mapworkshop.pdf,participatory mapping workshop protocol
-code,script2.R,run analysis
-code,script3.R,generate visualizations for results
+procedure/code/reproduction/reproduction_report.ipynb,reproduction_report.ipynb,Contains the code and writing for our reproduction study
+procedure/environment/requirements.txt,requirements.txt,Records the package versions required to rebuild our computational environment
+procedure/code/scratch,scratch,Folder containing all of the code prior to the compilation of one reproduction report
+data/metadata/generate_ACS_metadata.ipynb,generate_ACS_metadata.ipynb,Used to create our ACS data dictionary file
