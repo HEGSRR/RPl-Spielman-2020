@@ -1,5 +1,5 @@
 path,name,purpose
 procedure/code/,RPr-Spielman-2020.ipynb,Contains the code and writing for our reproduction study
 procedure/environment/,requirements.txt,Records the package versions required to rebuild our computational environment
-procedure/code/scratch,scratch,Folder containing all of the code prior to the compilation of one reproduction report
+procedure/code/,scratch/,Folder containing all of the code prior to the compilation of one reproduction report
 data/metadata/,generate_ACS_metadata.ipynb,Used to create our ACS data dictionary file
