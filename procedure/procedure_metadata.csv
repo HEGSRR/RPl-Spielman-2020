@@ -1,5 +1,5 @@
 path,name,purpose
-procedure/code/reproduction/reproduction_report.ipynb,reproduction_report.ipynb,Contains the code and writing for our reproduction study
+procedure/code/reproduction_report.ipynb,reproduction_report.ipynb,Contains the code and writing for our reproduction study
 procedure/environment/requirements.txt,requirements.txt,Records the package versions required to rebuild our computational environment
 procedure/code/scratch,scratch,Folder containing all of the code prior to the compilation of one reproduction report
 data/metadata/generate_ACS_metadata.ipynb,generate_ACS_metadata.ipynb,Used to create our ACS data dictionary file
