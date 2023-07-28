@@ -13,22 +13,35 @@ This study is a *replication* of:
 
 > Spielman, S. E., Tuccillo, J., Folch, D. C., Schweikert, A., Davies, R., Wood, N., & Tate, E. (2020). Evaluating Social Vulnerability Indicators: Criteria and their Application to the Social Vulnerability Index. Natural Hazards, 100(1), 417–436. https://doi.org/10.1007/s11069-019-03820-z
 
-The original paper develops methods to evaluate the validity of social vulnerability indicators and applies them to SoVI, revealing issues with internal consistency and construct validity.
-Their paper implements these methods by calculating SoVI over various spatial extents in the USA.
-We first reproduce their results and then extend their work with a replication study, determining how robust SoVI is to changes over time.
+The Spielman et al (2020) paper is in turn a replication of:
 
+> Cutter, S. L., Boruff, B. J., & Shirley, W. L. (2003). Social vulnerability to environmental hazards. Social Science Quarterly, 84(2), 242–261. https://doi.org/10.1111/1540-6237.8402002
+
+Spielman et al (2020) developed methods to evaluate the internal consistency and construct validity of the Cutter, Boruff and Shirley (2003) Social Vulnerability Index (SoVI).
+First, they reproduce a national SoVI model and validate it against an SPSS procedure provided by the original research group (Hazards Vulnerability Research Institute at University of South Carolina).
+The original SoVI uses 42 independent z-score normalized variables from the U.S. Census, reduces the data to factors using Principal Components Analysis, selects the first eleven factors, inverts factors with inverse relationships to social vulnerability, and sums the factors together to produce a SoVI score.
+The reproduced SoVI model was slightly different than the original model due to changes in U.S. Census data, using only 28 variables.
+
+Spielman et al. modify the geographic extent of the SoVI calculation by calculating SoVI on a national extent, and then recalculating for each of ten Federal Emergency Management Agency (FEMA) regions, and again for a single state or cluster of states within each of the ten regions, resulting in 21 total indices.
+Internal consistency is assessed by calculating the spearman rank correlation coefficient of the SoVI score for counties in the state model compared to the FEMA region model and national model.
+Construct validity is assessed by summing the loadings for each input variable across the PCA factors in each model and calculating the variables sign (positive/negative) and the rank of the variable's total loading compared to the other variables.
+These signs and ranks are summarized across all 21 versions of the SoVI model with regard to the number of times the sign is different from the national model and the distributions of ranks.
+
+In this replication study, we extend Spielman et al's work by addressing the robustness of SoVI in the temporal dimension.
+Specifically, we will construct a national SoVI model using 1-year, 3-year, and 5-year ACS data for each year between 2009 and 2013.
+We will employ the same methods as Spielman et al, evaluating internal consistency by calculating Spearman's rank correlations between model's of the same year and addressing theoretical consistency by summarizing the distributions of sign and rank amongst all models for each variable.
 
 ### Study Metadata
 
 - `Key words`: Social vulnerability, evaluation, social indicators
 - `Subject`: Social and Behavioral Sciences: Geography: Human Geography
 - `Date created`: June 19, 2023
-- `Date modified`: June 29, 2023
+- `Date modified`: July 28, 2023
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
 - `Spatial Reference System`: EPSG:4269
-- `Temporal Coverage`: TBD (ADD)
-- `Temporal Resolution`: TBD (ADD)
+- `Temporal Coverage`: 2008-2021
+- `Temporal Resolution`: New dataset collected annually
 - `Funding Name`: NSF Division of Behavioral and Cognitive Sciences
 - `Funding Title`: Transforming Theory and STEM Education Through Reproductions and Replications in the Geographical Sciences
 - `Award info URI`: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2049837
@@ -39,28 +52,47 @@ We first reproduce their results and then extend their work with a replication s
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
 - `Spatial Reference System`: EPSG:4269
-- `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
+- `Temporal Coverage`: 2009 - 2013
 - `Temporal Resolution`: One-time measurement, does not address change over time
 
 ## Study design
 
-First, we seek to computationally reproduce Spielman et al's original work using the code provided in [their Github repository](https://github.com/geoss/sovi-validity).
-We adapt their code to work in an updated Python environment using updated packages, and we enhance reproducibility by drawing data directly from the census into Python via an API, rather than downloading data and reading it into Python.
+In our previous work, we computationally reproduced Spielman et al's original paper using the code provided in [their Github repository](https://github.com/geoss/sovi-validity).
+( ALSO LINK TO OUR REPRODUCTION PERHAPS )
 
-Second, we seek to expand upon Spielman et al's work with a replication study.
-In their work, Spielman et al assess internal consistency and construct validity by altering the spatial extent.
-In our replication, we plan to employ the same methods to assess the validity of SoVI but change the temporal coverage rather than the spatial extent.
-In this manner, our analysis will assess the validity of SoVI from the perspective of robustness to time rather than spatial extent.
+The original paper was a replication study testing the sensitivity of SoVI to changes in geographic extent.
+Spielman et al addressed the following hypotheses in their work:
 
-Research questions for original paper:
-1. What methods can we use to assess the validity of indices used to measure latent variables like SoVI?
-2. Does SoVI fulfill the seven criteria identified by Spielman et al for assessing the validity of complex social indices, including internal consistency and theoretical consistency (construct validity)?
+> OR-H1: SoVI is internally inconsistent.
 
-Research questions for our replication study:
-1. To what extent is Spielman et al's paper reproducible?
-2. Does SoVI exhibit qualities of internal consistency and construct validity when we calculate SoVI in the same location for several different years?
+To address this hypothesis, Spielman et al illustrated that SoVI is not robust to changes in geographic extent by calculating SoVI scores for ten selected states or groups of states on three geographic extents: national, FEMA region, and state(s).
+The counties within the state(s) of interest were then selected and ranked according to their SoVI score.
+OR-H1 was tested by calculating Spearman's rank correlation between the state and FEMA region models and between the state and national models.
 
-***If the study design includes subcomponents with different spatial or temporal characteristics than the overall study, or includes multi-level models, then enumerate the different subcomponents/levels and specify their spatial/temporal differences here.***
+> OR-H2: SoVI is theoretically inconsistent.
+
+To address this hypothesis, Spielman et al used the same SoVI models as described under OR-H1.
+For each model, they summed all of the PCA factors together to determine the net influence of each variable in each model.
+Then they recorded the signs of each variable and calculated the number of deviations of the ten state and FEMA region models from the national model.
+They also ranked the variables by absolute value for each model and calculated summary statistics regarding the distribution of ranks for each variable amongst all models.
+Spielman et al did not use a particular statistical method to test OR-H2, but illustrated substantial disagreements between variable rankings and signs amongst the 21 SoVI models.
+
+In this study, we plan to replicate Spielman et al's work, using the same methods to evaluate internal and theoretical consistency but doing so with respect to temporal extent rather than spatial extent.
+In our replication, we begin with the same hypotheses as Spielman et al, but we will test those hypotheses by varying the temporal extent rather than spatial extent.
+
+> RPr-H1: SoVI is internally inconsistent.
+
+To address this hypothesis, we will calculate SoVI scores for the entire nation (excluding Puerto Rico) using three temporal extents: 1-year ACS data, 3-year ACS data, and 5-year ACS data.
+We will do this for every year that such data is available, which happens to be the years 2009 through 2013.
+We will then rank the counties in each model according to their SoVI scores and test RPr-H1 by calculating Spearman's rank correlation coefficients between the 1-year and 3-year models and between the 1-year and 5-year models for each year.
+
+> RPr-H2: SoVI is theoretically inconsistent.
+
+To address this hypothesis, we will use the same SoVI models as described under RPr-H1.
+For each model, we will sum all of the PCA components together to determine the net influence of each variable in each model.
+Then we will record the signs of each variable and calculate the number of deviations of variables' signs from the signs that we expect.
+(DIFFERENT FROM SPIELMAN ET AL, WHO COMPARE THE 20 STATE AND FEMA MODELS TO THE NATIONAL MODEL)
+We will also rank the variables by absolute value for each model and calculate summary statistics regarding the distribution of ranks for each variable amongst all models.
 
 ## Materials and procedure
 
@@ -69,23 +101,27 @@ Research questions for our replication study:
 Currently, we are using a 2020 MacBook Pro running on macOS Ventura 13.3.1.
 We anticipate collaborators working on the project from different computers and different operating systems, and we seek to containerize the project so that scripts can be run on many different machines.
 
-The original study used Python for their analysis, so we first reproduce their results in Python, using a containerized conda environment to be provided in the project's GitHub repository.
-This environment consists of the following software and packages:
+In our reproduction of the original study, we used a containerized conda environment consisting of the following software and packages:
 
 - Python 3.9.16
-- Pandas 1.4.4
-- GeoPandas 0.13.2
-- Pyhere 1.0.0
-- SciPy 1.10.1
-- NumPy 1.21.5
-- Mapclassify 2.5.0
+- pandas 1.4.4
+- geopandas 0.13.2
+- pyhere 1.0.0
+- scipy 1.10.1
+- numpy 1.21.5
 - MDP 3.5
-- Pygris 0.1.5
-- Libpysal 4.7.0
-- CHECK WHICH OTHERS TO ADD
+- pygris 0.1.5
+- libpysal 4.7.0
+- lxml 4.9.3
+- tabulate 0.9.0
+- matplotlib 3.7.1
+- mapclassify 2.5.0
+
+We will use the same environment for our replication study, adding in additional packages if necessary.
 
 ### Data and variables
 
+(STOPPED HERE 7/28)
 For Spielman et al's original study, the data sources were the 2008-2012 5-year American Community Survey and the 2010 decennial census.
 Spielman et al downloaded their data from Social Explorer; in our reproduction, we pull our data directly from the census into Python via a census API package known as pygris.
 Since we are reproducing and replicating the work of Spielman et al, the variables we use are the same as those used in their study.
