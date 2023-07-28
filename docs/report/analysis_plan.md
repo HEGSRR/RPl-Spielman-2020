@@ -77,9 +77,7 @@ Then they recorded the signs of each variable and calculated the number of devia
 They also ranked the variables by absolute value for each model and calculated summary statistics regarding the distribution of ranks for each variable amongst all models.
 Spielman et al did not use a particular statistical method to test OR-H2, but illustrated substantial disagreements between variable rankings and signs amongst the 21 SoVI models.
 
-In this study, we plan to replicate Spielman et al's work, using the same methods to evaluate internal and theoretical consistency but doing so with respect to temporal extent rather than spatial extent.
 In our replication, we begin with the same hypotheses as Spielman et al, but we will test those hypotheses by varying the temporal extent rather than spatial extent.
-
 > RPr-H1: SoVI is internally inconsistent.
 
 To address this hypothesis, we will calculate SoVI scores for the entire nation (excluding Puerto Rico) using three temporal extents: 1-year ACS data, 3-year ACS data, and 5-year ACS data.
