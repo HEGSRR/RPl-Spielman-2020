@@ -29,7 +29,7 @@ These signs and ranks are summarized across all 21 versions of the SoVI model wi
 
 In this replication study, we extend Spielman et al's work by addressing the robustness of SoVI in the temporal dimension.
 Specifically, we will construct a national SoVI model using 1-year, 3-year, and 5-year ACS data for each year between 2009 and 2013.
-We will employ the same methods as Spielman et al, evaluating internal consistency by calculating Spearman's rank correlations between model's of the same year and addressing theoretical consistency by summarizing the distributions of sign and rank amongst all models for each variable.
+We will employ the same methods as Spielman et al, evaluating internal consistency by calculating Spearman's rank correlations between models of the same year and addressing theoretical consistency by summarizing the distributions of sign and rank amongst all models for each variable.
 
 ### Study Metadata
 
