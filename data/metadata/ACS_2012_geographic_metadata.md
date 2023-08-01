@@ -1,5 +1,4 @@
-**Standard Metadata**
-
+- `Title`: American Community Survey 2012 5-year Estimate Demographic Variables
 - `Abstract`: The 5-year ACS provides estimates surrounding demographic information in the USA. These estimates are more reliable than 1-year and 3-year estimates but less reliable than decennial census data. On the other hand, 5-year estimates are less current than 1-year and 3-year estimates because they represent measurements taken over 60 months. See the [census website](https://www.census.gov/programs-surveys/acs/guidance/estimates.html) for more details.
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
