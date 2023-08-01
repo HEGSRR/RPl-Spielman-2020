@@ -4,7 +4,7 @@
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
 - `Spatial Reference System`: EPSG:4269
-- `Temporal Coverage`: Specify the temporal extent of your study---i.e. the range of time represented by the data observations.
+- `Temporal Coverage`: 2010
 - `Temporal Resolution`: One-time observations
 - `Lineage`: We use [pygris](https://walker-data.com/pygris/) to pull the data directly from the census into python.
 - `Distribution`: This file is distributed via a census API. See more information on the [census website](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.2010.html#list-tab-1556094155) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/).
