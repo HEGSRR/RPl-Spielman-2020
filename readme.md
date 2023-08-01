@@ -35,7 +35,7 @@ We first reproduce their results and then extend their work with a replication s
 
 ### Related to
 
-- `OSF Project`:
+- `OSF Project`: https://osf.io/dzpe9/
 - `Pre-analysis Registration`:
 - `Post-analysis Report Registration`:
 - `Preprint`:
