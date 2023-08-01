@@ -1,4 +1,4 @@
-# Replication of Spielman et al's 2020 Evaluation of Social Vulnerability Indicators
+# Replication of Spielman et al's 2020 Evaluation of the Social Vulnerability Index
 
 ### Description
 
