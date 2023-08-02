@@ -21,17 +21,17 @@ We first reproduce their results and then extend their work with a replication s
 
 - `Key words`: social vulnerability, evaluation, social indicators
 - `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
-- `Date created`: date when project was started
-- `Date modified`: date of most recent revision
+- `Date created`: 2023-06-12
+- `Date modified`: 2023-08-02
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
 - `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
 - `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
 - `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
-- `Funding Name`: name of funding for the project
-- `Funding Title`: title of project grant
-- `Award info URI`: web address for award information
-- `Award number`: award number
+- `Funding Name`: NSF Directorate for Social, Behavioral and Economic Sciences
+- `Funding Title`: Transforming theory-building and STEM education through reproductions and replications in the geographical sciences
+- `Award info URI`: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2049837
+- `Award number`: BCS-2049837
 
 ### Related to
 
@@ -41,7 +41,8 @@ We first reproduce their results and then extend their work with a replication s
 - `Preprint`:
 - `Conference Presentation`:
 - `Publication`:
-- `...`:
+- `Prior Study`: https://doi.org/10.1007/s11069-019-03820-z and https://github.com/geoss/sovi-validity
+- `Prior Study`: https://doi.org/10.1111/1540-6237.8402002
 
 ### Metadata for access
 
