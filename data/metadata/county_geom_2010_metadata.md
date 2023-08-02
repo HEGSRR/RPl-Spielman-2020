@@ -1,5 +1,4 @@
-**Standard Metadata**
-
+- `Title`: USA Counties Cartographic Boundaries
 - `Abstract`: The cartographic boundary files provided by the US census are simplified representations of the MAF/TIGER files. We use the 2010 boundary file because the census has not made such a file available for 2012 or 2011 and the original paper also used land area from 2010. This shapefile provides the geometries of counties and county-equivalents in the United States, with limited attribute information including land area.
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
