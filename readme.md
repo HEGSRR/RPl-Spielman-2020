@@ -50,7 +50,7 @@ We first reproduce their results and then extend their work with a replication s
 - `Rights`: [LICENSE](LICENSE): BSD 3-Clause "New" or "Revised"
 - `Resource type`: Collection
 - `Resource language`: English
-- `Conforms to`: Template for Reproducible and Replicable Research in Human-Environment and Geographical Sciences, DOI:[10.17605/OSF.IO/W29MQ](https://doi.org/10.17605/OSF.IO/W29MQ )
+- `Conforms to`: Template for Reproducible and Replicable Research in Human-Environment and Geographical Sciences, DOI:[10.17605/OSF.IO/W29MQ](https://doi.org/10.17605/OSF.IO/W29MQ)
 
 ### Compendium structure and contents
 
