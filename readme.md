@@ -43,6 +43,7 @@ We first reproduce their results and then extend their work with a replication s
 - `Publication`:
 - `Prior Study`: https://doi.org/10.1007/s11069-019-03820-z and https://github.com/geoss/sovi-validity
 - `Prior Study`: https://doi.org/10.1111/1540-6237.8402002
+- `Binder`: https://mybinder.org/v2/gh/HEGSRR/RPl-Spielman-2020/HEAD
 
 ### Metadata for access
 
