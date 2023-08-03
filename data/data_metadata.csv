@@ -1,6 +1,6 @@
 path,name,metadata,description
-data/raw/public/spielman/input/USA_Counties_500k.shp,USA_Counties_500k.shp,No metadata provided,Shapefile containing the cartographic boundaries for all US counties and county-equivalents excluding those in Puerto Rico
-data/raw/public/spielman/input/sovi_decennial_sup1.csv,sovi_decennial_sup1.csv,spielman/sovi_decennial_sup1.txt,Supplementary information regarding land area for 2010 census accessed via Social Explorer
+data/raw/public/spielman/input/USA_Counties_500k.shp,USA_Counties_500k.shp,USA_counties_metadata.md,Shapefile containing the cartographic boundaries for all US counties and county-equivalents excluding those in Puerto Rico
+data/raw/public/spielman/input/sovi_decennial_sup1.csv,sovi_decennial_sup1.csv,spielman/sovi_decennial_sup1.txt and dec_2010_metadata.md,Supplementary information regarding land area for 2010 census accessed via Social Explorer
 data/raw/public/spielman/input/sovi_acs.csv,sovi_acs.csv,spielman/sovi_acs.txt,Demographic data from 2008-2012 5-year American Community Survey  accessed via Social Explorer
 data/raw/public/spielman/input/sovi_acs_kids.csv,sovi_acs_kids.csv,spielman/sovi_acs_kids.txt,Supplementary variables regarding children for 2008-2012 5 year ACS accessed via Social Explorer
 data/raw/public/spielman/output/County_in_State_Rank.csv,County_in_State_Rank.csv,Derived (by Spielman et al),All 3 SoVI model's ranks in each state of interest
@@ -9,7 +9,7 @@ data/raw/public/spielman/output/state_fema_us_rank_correlations.csv,state_fema_u
 data/raw/public/spielman/output/State_Sovi_Score.csv,State_Sovi_Score.csv,Derived (by Spielman et al),SoVI scores and ranks for all counties in each state model
 data/raw/public/spielman/output/US_Sovi_Score.csv,US_Sovi_Score.csv,Derived (by Spielman et al),SoVI scores and ranks for all counties in the analysis
 data/raw/public/spielman/output/variable_contributions.csv,variable_contributions.csv,Derived (by Spielman et al),Variable contributions in all SoVI models
-data/raw/public/counties_attributes_raw.csv,counties_attributes_raw.csv,ACS_2012_data_dictionary.csv and ACS_2012_geographic_metadata.md,Counties attribute data acquired directly from pygris
+data/raw/public/counties_attributes_raw.csv,counties_attributes_raw.csv,ACS_2012_data_dictionary.csv (created with generate_ACS_metadata.ipynb) and ACS_2012_geographic_metadata.md,Counties attribute data acquired directly from pygris
 data/raw/public/counties_geometries_raw.gpkg,counties_geometries_raw.gpkg,county_geom_2010_metadata.md,Counties geometry data acquired directly from pygris
 data/derived/public/version1/counties.csv,counties.csv,Derived,County-level data without geometries for input into SoVI.
 data/derived/public/version1/counties.gpkg,counties.gpkg,Derived,County-level data with geometries for input into SoVI.
