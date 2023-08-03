@@ -62,9 +62,9 @@ This research compendium is structured with four main directories:
 - `results`: contains subdirectories for `figures`, formatted data `tables`, or `other` formats of research results.
 
 The data, procedures, and results of this repository are outlined in three tables:
-- Data: [data/data_metadata.csv](data/data_metadata.csv)
-- Procedures: [procedure/procedure_metadata.csv](procedure/procedure_metadata.csv)
-- Results: [results/results_metadata.csv](results/results_metadata.csv)
+- Data: [data/data_index.csv](data/data_index.csv)
+- Procedures: [procedure/procedure_index.csv](procedure/procedure_index.csv)
+- Results: [results/results_index.csv](results/results_index.csv)
 
 Important **documents** include:
 - Pre-analysis plan: [docs/report/preanalysis.pdf](docs/report/preanalysis.pdf)
