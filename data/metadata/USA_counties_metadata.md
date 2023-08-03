@@ -1,5 +1,5 @@
 - `Title`: USA Counties Geographic Shapefile
-- `Abstract`: No metadata provided, so it is unclear exactly where Spielman et al acquired this file but they likely downloaded it directly or indirectly from the census. The shapefile provides the geometries of counties and county-equivalents in the United States, with limited attribute information including county name and a unique identifier.
+- `Abstract`: No metadata provided, so it is unclear exactly where Spielman et al. acquired this file but they likely downloaded it directly or indirectly from the census. The shapefile provides the geometries of counties and county-equivalents in the United States, with limited attribute information including county name and a unique identifier.
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: County and county-equivalents
 - `Spatial Reference System`: EPSG:4269
