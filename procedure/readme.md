@@ -1,7 +1,7 @@
 # Procedure
 Catalog all procedures used here in an *ordered* table documenting any code or other research procedure/protocol documents. Provide a brief description of the purpose of each procedure and piece of code.
 
-Catalog the files in [procedure_metadata.csv](procedure_metadata.csv)
+Catalog the files in [procedure_index.csv](procedure_index.csv)
 
 See the example table below, and modify the table to suit your research design.
 
