@@ -1,0 +1,47 @@
+,Label,Alias,Definition,Type,Domain,Missing Data Value(s),Missing Data Frequency
+0,GEOID,FIPS code unique identifier,Unique code for every county and county-equivalent in USA,string,01001 - 56045,None,0.0
+0,B01002_001E,median age,MEDIAN AGE BY SEX: Estimate!!Median age!!Total,float64,22.2 - 68,NaN,0.0
+1,B03002_001E,total population of respondents to race/ethnicity,HISPANIC OR LATINO ORIGIN BY RACE: Estimate!!Total,int64,117 - 10040682,NaN,0.0
+2,B03002_004E,total Black population,HISPANIC OR LATINO ORIGIN BY RACE: Estimate!!Total!!Not Hispanic or Latino!!Black or African American alone,int64,0 - 1184373,NaN,0.0
+3,B03002_005E,total Native American population,HISPANIC OR LATINO ORIGIN BY RACE: Estimate!!Total!!Not Hispanic or Latino!!American Indian and Alaska Native alone,int64,0 - 67940,NaN,0.0
+4,B03002_006E,total Asian population,HISPANIC OR LATINO ORIGIN BY RACE: Estimate!!Total!!Not Hispanic or Latino!!Asian alone,int64,0 - 1467279,NaN,0.0
+5,B03002_012E,total Latinx population,HISPANIC OR LATINO ORIGIN BY RACE: Estimate!!Total!!Hispanic or Latino,int64,0 - 4851344,NaN,0.0
+6,B06001_002E,total population under 5 years of age,PLACE OF BIRTH BY AGE IN THE UNITED STATES: Estimate!!Total!!Under 5 years,float64,1 - 593061,NaN,0.0
+7,B09020_001E,total population over 65 years of age,RELATIONSHIP BY HOUSEHOLD TYPE (INCLUDING LIVING ALONE) FOR THE POPULATION 65 YEARS AND OVER: Estimate!!Total,int64,9 - 1370141,NaN,0.0
+8,B01003_001E,total population,TOTAL POPULATION: Estimate!!Total,int64,117 - 10040682,NaN,0.0
+9,B25008_001E,total population in occupied housing units,TOTAL POPULATION IN OCCUPIED HOUSING UNITS BY TENURE: Estimate!!Total,int64,117 - 9858119,NaN,0.0
+10,B25002_002E,total occupied housing units,OCCUPANCY STATUS: Estimate!!Total!!Occupied,int64,62 - 3332504,NaN,0.0
+11,B25003_003E,total renter occupied housing units,TENURE: Estimate!!Total!!Renter occupied,int64,15 - 1798032,NaN,0.0
+12,B25002_001E,total housing units for which occupancy status is known,OCCUPANCY STATUS: Estimate!!Total,int64,87 - 3559790,NaN,0.0
+13,B09020_021E,total 65+ living in group quarters,RELATIONSHIP BY HOUSEHOLD TYPE (INCLUDING LIVING ALONE) FOR THE POPULATION 65 YEARS AND OVER: Estimate!!Total!!In group quarters,int64,0 - 37892,NaN,0.0
+14,B01001_026E,total female population,SEX BY AGE: Estimate!!Total!!Female,int64,34 - 5091117,NaN,0.0
+15,B11001_006E,total female-headed family households,"HOUSEHOLD TYPE (INCLUDING LIVING ALONE): Estimate!!Total!!Family households!!Other family!!Female householder, no husband present",int64,0 - 489792,NaN,0.0
+16,B11001_001E,total households for which household type is known,HOUSEHOLD TYPE (INCLUDING LIVING ALONE): Estimate!!Total,int64,62 - 3332504,NaN,0.0
+17,B25002_003E,total vacant housing units,OCCUPANCY STATUS: Estimate!!Total!!Vacant,int64,25 - 227286,NaN,0.0
+18,B19025_001E,aggregate household income,AGGREGATE HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2012 INFLATION-ADJUSTED DOLLARS): Estimate!!Aggregate household income in the past 12 months (in 2012 inflation-adjusted dollars),int64,4395400 - 343980564100,NaN,0.0
+19,B23022_025E,total males unemployed for last 12 months,SEX BY WORK STATUS IN THE PAST 12 MONTHS BY USUAL HOURS WORKED PER WEEK IN THE PAST 12 MONTHS BY WEEKS WORKED IN THE PAST 12 MONTHS FOR THE POPULATION 16 TO 64 YEARS: Estimate!!Total!!Male!!Did not work in the past 12 months,int64,0 - 668720,NaN,0.0
+20,B23022_049E,total females unemployed for last 12 months,SEX BY WORK STATUS IN THE PAST 12 MONTHS BY USUAL HOURS WORKED PER WEEK IN THE PAST 12 MONTHS BY WEEKS WORKED IN THE PAST 12 MONTHS FOR THE POPULATION 16 TO 64 YEARS: Estimate!!Total!!Female!!Did not work in the past 12 months,int64,1 - 1014905,NaN,0.0
+21,B23022_001E,total population for which unemployment and sex cross-tabulations known,SEX BY WORK STATUS IN THE PAST 12 MONTHS BY USUAL HOURS WORKED PER WEEK IN THE PAST 12 MONTHS BY WEEKS WORKED IN THE PAST 12 MONTHS FOR THE POPULATION 16 TO 64 YEARS: Estimate!!Total,int64,38 - 6742007,NaN,0.0
+22,B17021_002E,total population below poverty level,POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT: Estimate!!Total!!Income in the past 12 months below poverty level,int64,0 - 1401656,NaN,0.0
+23,B17021_001E,total population for which poverty information available,POVERTY STATUS OF INDIVIDUALS IN THE PAST 12 MONTHS BY LIVING ARRANGEMENT: Estimate!!Total,int64,117 - 9884138,NaN,0.0
+24,B25024_010E,number of mobile home housing units in structure,UNITS IN STRUCTURE: Estimate!!Total!!Mobile home,int64,0 - 90970,NaN,0.0
+25,B25024_001E,total housing units in structure,UNITS IN STRUCTURE: Estimate!!Total,int64,87 - 3559790,NaN,0.0
+26,C24010_038E,total female employed,SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER: Estimate!!Total!!Female,int64,6 - 2271915,NaN,0.0
+27,C24010_001E,total population for which sex and occupation known,SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER: Estimate!!Total,int64,71 - 4908826,NaN,0.0
+28,B19055_002E,total households with social security income,SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS: Estimate!!Total!!With Social Security income,int64,3 - 848150,NaN,0.0
+29,B19055_001E,total households for which social security income status known,SOCIAL SECURITY INCOME IN THE PAST 12 MONTHS FOR HOUSEHOLDS: Estimate!!Total,int64,62 - 3332504,NaN,0.0
+30,B09002_002E,total children in married couple families,OWN CHILDREN UNDER 18 YEARS BY FAMILY TYPE AND AGE: Estimate!!Total!!In married-couple families,int64,0 - 1241287,NaN,0.0
+31,B09002_001E,total children for which family type and age are known,OWN CHILDREN UNDER 18 YEARS BY FAMILY TYPE AND AGE: Estimate!!Total,int64,0 - 1797946,NaN,0.0
+32,B19001_017E,total households with over 200k income,"HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2012 INFLATION-ADJUSTED DOLLARS): Estimate!!Total!!$200,000 or more",int64,0 - 369181,NaN,0.0
+33,B06007_005E,total Spanish-speakers who speak english less than very well,"PLACE OF BIRTH BY LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH IN THE UNITED STATES: Estimate!!Total!!Speak Spanish!!Speak English less than ""very well""",float64,0 - 1458177,NaN,0.0
+34,B06007_008E,total people who speak another language and speak English less than very well,"PLACE OF BIRTH BY LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH IN THE UNITED STATES: Estimate!!Total!!Speak other languages!!Speak English less than ""very well""",float64,0 - 732907,NaN,0.0
+35,B06007_001E,total population with known language spoken at home and English ability,PLACE OF BIRTH BY LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH IN THE UNITED STATES: Estimate!!Total,float64,96 - 9447621,NaN,0.0
+36,B16010_002E,total population with less than a high school graduate education,EDUCATIONAL ATTAINMENT AND EMPLOYMENT STATUS BY LANGUAGE SPOKEN AT HOME FOR THE POPULATION 25 YEARS AND OVER: Estimate!!Total!!Less than high school graduate,int64,3 - 1395909,NaN,0.0
+37,B16010_001E,"total for which education, employment, language at home known",EDUCATIONAL ATTAINMENT AND EMPLOYMENT STATUS BY LANGUAGE SPOKEN AT HOME FOR THE POPULATION 25 YEARS AND OVER: Estimate!!Total,int64,88 - 6909179,NaN,0.0
+38,C24050_002E,total population in extractive industries,"INDUSTRY BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER: Estimate!!Total!!Agriculture, forestry, fishing and hunting, and mining",int64,0 - 69308,NaN,0.0
+39,C24050_001E,total population for which industry known,INDUSTRY BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER: Estimate!!Total,int64,71 - 4908826,NaN,0.0
+40,C24050_029E,total people in service occupations,INDUSTRY BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER: Estimate!!Total!!Service occupations,int64,0 - 916267,NaN,0.0
+41,B08201_002E,total households with no available vehicle,HOUSEHOLD SIZE BY VEHICLES AVAILABLE: Estimate!!Total!!No vehicle available,int64,0 - 588999,NaN,0.0
+42,B08201_001E,total households for which vehicle status and family size known,HOUSEHOLD SIZE BY VEHICLES AVAILABLE: Estimate!!Total,int64,62 - 3332504,NaN,0.0
+43,B25064_001E,median gross rent,MEDIAN GROSS RENT (DOLLARS): Estimate!!Median gross rent,float64,325 - 2435,NaN,10.0
+44,B25077_001E,median home value,MEDIAN VALUE (DOLLARS): Estimate!!Median value (dollars),float64,22800 - 1163100,NaN,5.0

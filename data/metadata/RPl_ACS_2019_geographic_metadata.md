@@ -1,0 +1,12 @@
+- `Title`: American Community Survey 2019 5-year Estimate Demographic Variables
+- `Abstract`: The 5-year ACS provides estimates surrounding demographic information in the USA. These estimates are more reliable than 1-year and 3-year estimates but less reliable than decennial census data. On the other hand, 5-year estimates are less current than 1-year and 3-year estimates because they represent measurements taken over 60 months. See the [census website](https://www.census.gov/programs-surveys/acs/guidance/estimates.html) for more details.
+- `Spatial Coverage`: United States, excluding Puerto Rico
+- `Spatial Resolution`: County and county-equivalents
+- `Spatial Reference System`: None, just attribute data
+- `Temporal Coverage`: 2015-2019
+- `Temporal Resolution`: Data averaged over five years
+- `Lineage`: Obtained directly from the census via API.
+- `Distribution`: The replication data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2019.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/).
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: Margin of error provided by the Census Bureau for relevant variables
+- `Variables`:  See RPl_ACS_2019_data_dictionary.csv
