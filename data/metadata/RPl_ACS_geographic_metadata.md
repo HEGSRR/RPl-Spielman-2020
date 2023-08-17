@@ -1,0 +1,12 @@
+- `Title`: American Community Survey 5-year Estimate Demographic Variables
+- `Abstract`: The 5-year ACS provides estimates surrounding demographic information in the USA. These estimates are more reliable than 1-year and 3-year estimates but less reliable than decennial census data. On the other hand, 5-year estimates are less current than 1-year and 3-year estimates because they represent measurements taken over 60 months. See the [census website](https://www.census.gov/programs-surveys/acs/guidance/estimates.html) for more details. We use the 5-year estimates published each year from 2012 to 2021.
+- `Spatial Coverage`: United States, excluding Puerto Rico
+- `Spatial Resolution`: County and county-equivalents
+- `Spatial Reference System`: None, just attribute data
+- `Temporal Coverage`: 2008-2021
+- `Temporal Resolution`: 5 year estimates
+- `Lineage`: Obtained directly from the census via API.
+- `Distribution`: The replication data is distributed via a census API. See the detailed tables on the [census website](https://www.census.gov/data/developers/data-sets/acs-5year/2012.html) and instructions for drawing census data directly into python on the [pygris website](https://walker-data.com/pygris/).
+- `Constraints`: Census data is available in the public domain
+- `Data Quality`: Margin of error provided by the Census Bureau for relevant variables
+- `Variables`:  See RPl_ACS_2012_data_dictionary.csv, RPl_ACS_2013_data_dictionary.csv, RPl_ACS_2014_data_dictionary.csv, RPl_ACS_2015_data_dictionary.csv, RPl_ACS_2016_data_dictionary.csv, RPl_ACS_2017_data_dictionary.csv, RPl_ACS_2018_data_dictionary.csv, RPl_ACS_2019_data_dictionary.csv, RPl_ACS_2020_data_dictionary.csv, RPl_ACS_2021_data_dictionary.csv.
