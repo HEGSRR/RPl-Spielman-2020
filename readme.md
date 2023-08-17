@@ -2,7 +2,7 @@
 
 ### Description
 
-This study is a *replication* of:
+This study is a *reproduction* and *replication* of:
 
 > Spielman, S. E., Tuccillo, J., Folch, D. C., Schweikert, A., Davies, R., Wood, N., & Tate, E. (2020). Evaluating Social Vulnerability Indicators: Criteria and their Application to the Social Vulnerability Index. Natural Hazards, 100(1), 417–436. https://doi.org/10.1007/s11069-019-03820-z
 
