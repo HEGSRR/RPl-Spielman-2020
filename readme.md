@@ -36,9 +36,11 @@ We first reproduce their results and then extend their work with a replication s
 ### Related to
 
 - `OSF Project`: https://doi.org/10.17605/OSF.IO/DZPE9
-- `Reproduction Report`: https://doi.org/10.17605/OSF.IO/4S62B
-- `Pre-analysis Registration`:
-- `Post-analysis Report Registration`:
+- `Reproduction Report Registration`: https://doi.org/10.17605/OSF.IO/4S62B
+- `Local Reproduction Report`: [docs/report/RPr-Spielman-2020-report.pdf](docs/report/RPr-Spielman-2020-report.pdf)
+- `Replication Analysis Preregistration`:
+- `Local Replication Analysis Plan`: [docs/report/RPl-Spielman-2020-analysis-plan.pdf](docs/report/RPl-Spielman-2020-analysis-plan.pdf)
+- `Replication Report Registration`:
 - `Preprint`:
 - `Conference Presentation`:
 - `Publication`:
