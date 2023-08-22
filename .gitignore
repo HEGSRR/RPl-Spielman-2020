@@ -98,5 +98,6 @@ __pycache__/
 env/
 venv/
 ENV/
+pipfile*
 env.bak/
 venv.bak/
