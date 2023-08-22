@@ -9,5 +9,5 @@ For users of R, our template code, at a minimum, saves environment information u
 
 ## Environment Setup
 
-We have used `pipenv` to manage the computational python environment for this study. To reproduce, install Python and Jupyter and run the code found in [environment_setup.ipynb](environment_setup.ipynb)
-Alternatively, we have saved a version of the `requirements.txt` package requirements in the root folder so that the study can be run in a Docker container on Binder: https://mybinder.org/v2/gh/HEGSRR/RPl-Spielman-2020/HEAD 
+We have used `pipenv` to manage the computational python environment for this study. To reproduce, install Python and Jupyter and run the code found in [/code/00-Python-environment-setup.ipynb](../code/00-Python-environment-setup.ipynb)
+Alternatively, we have saved a version of the `requirements.txt` package requirements in the root folder so that the study can be run in a Docker container on Binder: https://mybinder.org/v2/gh/HEGSRR/RPl-Spielman-2020/HEAD
