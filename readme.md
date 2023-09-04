@@ -67,7 +67,7 @@ The data, procedures, and results of this repository are outlined in three table
 - Procedures: [procedure/procedure_index.csv](procedure/procedure_index.csv)
 - Results: [results/results_index.csv](results/results_index.csv)
 
-Important **documents** include:
+Important local **documents** include:
 - Replication pre-analysis plan: [docs/report/RPl-Spielman-2020-analysis-plan.pdf](docs/report/RPl-Spielman-2020-analysis-plan.pdf)
 - Reproduction study report: [docs/report/RPr-Spielman-2020-report.pdf](docs/report/RPr-Spielman-2020-report.pdf)
 - Manuscript: ...
