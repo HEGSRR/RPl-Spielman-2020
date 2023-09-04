@@ -37,9 +37,7 @@ We first reproduce their results and then extend their work with a replication s
 
 - `OSF Project`: https://doi.org/10.17605/OSF.IO/DZPE9
 - `Reproduction Report Registration`: https://doi.org/10.17605/OSF.IO/4S62B
-- `Local Reproduction Report`: [docs/report/RPr-Spielman-2020-report.pdf](docs/report/RPr-Spielman-2020-report.pdf)
-- `Replication Analysis Preregistration`:
-- `Local Replication Analysis Plan`: [docs/report/RPl-Spielman-2020-analysis-plan.pdf](docs/report/RPl-Spielman-2020-analysis-plan.pdf)
+- `Replication Analysis Preregistration`: https://doi.org/10.17605/OSF.IO/9NTDS
 - `Replication Report Registration`:
 - `Preprint`:
 - `Conference Presentation`:
@@ -70,10 +68,10 @@ The data, procedures, and results of this repository are outlined in three table
 - Results: [results/results_index.csv](results/results_index.csv)
 
 Important **documents** include:
-- Pre-analysis plan: [docs/report/preanalysis.pdf](docs/report/preanalysis.pdf)
-- Study report: [docs/report/report.pdf](docs/report/report.pdf)
-- Manuscript: [docs/manuscript/manuscript.pdf](docs/manuscript/manuscript.pdf)
-- Presentation: [docs/presentation/presentation.pdf](docs/presentation/presentation.pdf)
+- Replication pre-analysis plan: [docs/report/preanalysis.pdf](docs/report/RPl-Spielman-2020-analysis-plan.pdf)
+- Reproduction study report: [docs/report/report.pdf](docs/report/RPr-Spielman-2020-report.pdf)
+- Manuscript: ...
+- Presentation: ...
 
 #### Compendium reference
 
