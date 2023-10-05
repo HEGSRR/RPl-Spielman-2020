@@ -25,7 +25,7 @@ We first reproduce their results and then extend their work with a replication s
 - `Date modified`: 2023-08-02
 - `Spatial Coverage`: United States, excluding Puerto Rico
 - `Spatial Resolution`: Counties and county equivalents
-- `Spatial Reference System`: Specify the geographic or projected coordinate system for the study
+- `Spatial Reference System`: EPSG 4269 NAD83
 - `Temporal Coverage`: 2008 - 2012 (data is the 2012 5-year ACS)
 - `Temporal Resolution`: Specify the temporal resolution of your study---i.e. the duration of time for which each observation represents or the revisit period for repeated observations
 - `Funding Name`: NSF Directorate for Social, Behavioral and Economic Sciences
